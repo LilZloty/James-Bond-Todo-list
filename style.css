@@ -1,143 +1,144 @@
-                @font-face {
-                font-family: '007_goldeneyeregular';
-                src: url('007_goldeneye-webfont.woff2') format('woff2'), url('007_goldeneye-webfont.woff') format('woff');
-                font-weight: normal;
-                font-style: normal;
-            }
-            
-            body {
-                margin: 5%;
-                font-family: '007_goldeneyeregular';
-                display: grid;
-                justify-content: center;
-                text-transform: uppercase;
-            }
-            
-            video {
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                min-width: 100%;
-                min-height: 100%;
-                width: auto;
-                height: auto;
-                z-index: -100;
-                transform: translateX(-50%) translateY(-50%);
-                background: url('https://zupimages.net/viewer.php?id=20/36/vziv.png') no-repeat;
-                background-size: cover;
-                transition: 1s opacity;
-            }
-            
-            .stopfade {
-                opacity: .5;
-            }
-            
-            .title {
-                color: white;
-                text-align: center;
-                margin-bottom: 0.5em;
-            }
-            
-            .msg1 {
-                color: white;
-                text-align: center;
-                margin-bottom: 1em;
-            }
-            
-            .entry-textbox {
-                background-color: rgba(0, 0, 0, 0.3);
-                width: 50em;
-                height: 10em;
-                padding: 1em;
-                margin-bottom: 0.5em;
-                border: unset;
-                border-radius: 25px;
-                font-family: '007_goldeneyeregular';
-                color: white;
-                text-transform: uppercase;
-                font-weight: 700;
-                font-style: bold;
-            }
-            
-            .entry-textbox:focus {
-                outline: none;
-                color: white;
-                font-family: '007_goldeneyeregular';
-                text-transform: uppercase;
-                font-weight: 700;
-                font-style: bold;
-            }
-            
-            #entryForm .button {
-                border: unset;
-                border-radius: 25px;
-                padding: 5px 16px;
-                margin-left: 80%;
-                color: white;
-                font-family: '007_goldeneyeregular';
-                text-transform: uppercase;
-                font-weight: 700;
-                font-style: bold;
-            }
-            
-            #entries {
-                background: rgba(0, 0, 0, 0.3);
-                color: white;
-                font-family: '007_goldeneyeregular';
-                padding: 2em;
-                max-width: 50em;
-                border: unset;
-                border-radius: 25px;
-                margin-top: 1em;
-                text-transform: uppercase;
-            }
-            
-            .entries-nav {
-                padding-bottom: 1em;
-            }
-            
-            .display-entry-button {
-                margin: 0.2em;
-            }
-            
-            .display-entry-button:hover {
-                cursor: pointer;
-            }
-            
-            #btnpause {
-                opacity: none;
-                display: block;
-                border: none;
-                margin: 1rem auto;
-                border-radius: 25px;
-                cursor: pointer;
-                transition: .3s background;
-                padding: 12px 16px;
-                margin-left: 80%;
-                font-weight: 700;
-                font-style: bold;
-                font-family: '007_goldeneyeregular';
-                text-transform: uppercase;
-                background: none;
-                color: white;
-            }
-            
-            #btnpause:hover {
-                background: rgba(0, 0, 0, 0.5);
-            }
-            
-            .button {
-                background: rgba(0, 0, 0, 1);
-                color: white;
-                font-weight: 700;
-                font-style: bold;
-            }
-            
-            @media screen and (max-width: 500px) {
-                body {
-                    padding-top: 50%;
-                }
-                .title {
-                    font-size: 48px;
-                }
-                @media screen and (min-device-width: 800px) {}
+                    @font-face {
+                        font-family: '007_goldeneyeregular';
+                        src: url('007_goldeneye-webfont.woff2') format('woff2'), url('007_goldeneye-webfont.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                    
+                    body {
+                        margin: 5%;
+                        font-family: '007_goldeneyeregular';
+                        display: grid;
+                        justify-content: center;
+                        text-transform: uppercase;
+                    }
+                    
+                    video {
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: auto;
+                        height: auto;
+                        z-index: -100;
+                        transform: translateX(-50%) translateY(-50%);
+                        background: url('https://zupimages.net/viewer.php?id=20/36/vziv.png') no-repeat;
+                        background-size: cover;
+                        transition: 1s opacity;
+                    }
+                    
+                    .stopfade {
+                        opacity: .5;
+                    }
+                    
+                    .title {
+                        color: white;
+                        text-align: center;
+                        margin-bottom: 0.5em;
+                    }
+                    
+                    .msg1 {
+                        color: white;
+                        text-align: center;
+                        margin-bottom: 1em;
+                    }
+                    
+                    .entry-textbox {
+                        background-color: rgba(0, 0, 0, 0.3);
+                        width: 50em;
+                        height: 10em;
+                        padding: 1em;
+                        margin-bottom: 0.5em;
+                        border: unset;
+                        border-radius: 25px;
+                        font-family: '007_goldeneyeregular';
+                        color: white;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-style: bold;
+                    }
+                    
+                    .entry-textbox:focus {
+                        outline: none;
+                        color: white;
+                        font-family: '007_goldeneyeregular';
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-style: bold;
+                    }
+                    
+                    #entryForm .button {
+                        border: unset;
+                        border-radius: 25px;
+                        padding: 5px 16px;
+                        margin-left: 80%;
+                        color: white;
+                        font-family: '007_goldeneyeregular';
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-style: bold;
+                    }
+                    
+                    #entries {
+                        background: rgba(0, 0, 0, 0.3);
+                        color: white;
+                        font-family: '007_goldeneyeregular';
+                        padding: 2em;
+                        max-width: 50em;
+                        border: unset;
+                        border-radius: 25px;
+                        margin-top: 1em;
+                        text-transform: uppercase;
+                    }
+                    
+                    .entries-nav {
+                        padding-bottom: 1em;
+                    }
+                    
+                    .display-entry-button {
+                        margin: 0.2em;
+                    }
+                    
+                    .display-entry-button:hover {
+                        cursor: pointer;
+                    }
+                    
+                    #btnpause {
+                        opacity: none;
+                        display: block;
+                        border: none;
+                        margin: 1rem auto;
+                        border-radius: 25px;
+                        cursor: pointer;
+                        transition: .3s background;
+                        padding: 12px 16px;
+                        margin-left: 80%;
+                        font-weight: 700;
+                        font-style: bold;
+                        font-family: '007_goldeneyeregular';
+                        text-transform: uppercase;
+                        background: none;
+                        color: white;
+                    }
+                    
+                    #btnpause:hover {
+                        background: rgba(0, 0, 0, 0.5);
+                    }
+                    
+                    .button {
+                        background: rgba(0, 0, 0, 1);
+                        color: white;
+                        font-weight: 700;
+                        font-style: bold;
+                    }
+                    
+                    @media screen and (max-width: 500px) {
+                        body {
+                            padding-top: 50%;
+                        }
+                        .title {
+                            font-size: 48px;
+                        }
+                        @media screen and (max-device-width: 800px) {}
+                    }
